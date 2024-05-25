@@ -16,3 +16,20 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 }
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #248277;
+    border-radius: 5rem;
+}
+
+section{
+    padding: 2rem 7%;
+}
