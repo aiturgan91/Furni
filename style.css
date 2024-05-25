@@ -33,3 +33,308 @@ html::-webkit-scrollbar-thumb{
 section{
     padding: 2rem 7%;
 }
+
+.heading{
+    font-size: 4rem;
+    color: #222;
+    padding-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.heading span{
+    color: #248277;
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #248277;
+    border: .1rem solid #248277;
+    background: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #fff;
+    background: #248277;
+}
+
+
+/* headertop */
+
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 7%;
+    border-bottom: .1rem solid #eee;
+}
+
+.header-top .social a{
+    font-size: 1.2rem;
+    padding: .5rem;
+    margin-left: .25rem;
+    background: #248277;
+    border-radius: .5rem;
+    color: #fff;
+}
+
+#menu{
+    font-size: 2.5rem;
+    color: #248277;
+    border: .1rem solid #248277;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.header-top .logo{
+    color: #248277;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.header-top .logo i{
+    padding-right: .5rem;
+    color: #222;
+}
+
+.header-top .icons .action-btn{
+    position: relative;
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    padding: .5rem;
+    background: #fff
+}
+
+.header-top .icons .action-btn a{
+    color: #fff;
+    -webkit-text-stroke: .1rem #222;
+}
+
+.header-top .icons .action-btn a:hover{
+    -webkit-text-stroke: .1rem #248277;
+}
+
+.header-top .icons .action-btn .count{
+    position: absolute;
+    top: -.3rem;
+    right: -.2rem;
+    background: #248277;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1;
+    padding: .2rem .4rem;
+    border-radius: 50%;
+}
+
+/* header-main */
+
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 7%;
+    background: #fff;
+    position: relative;
+}
+
+.header-main.active{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.header-main .navbar a{
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: #222;
+}
+
+.header-main .navbar a:hover{
+    color: #248277;
+}
+
+/* end */
+
+/* home */
+
+.home{
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    background: url(images/home.png) no-repeat;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.home .content{
+    max-width: 55rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #248277;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #777;
+    padding: 1rem 0;
+}
+
+/* end */
+
+/* banner */
+
+.banner-container{
+    display: grid;
+    padding: 2rem 3%;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.banner-container .banner{
+    height: 45rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-container .banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-container .banner:hover img{
+    transform: scale(1.2);
+}
+
+.banner-container .banner .content{
+    position: absolute;
+    top: 25%;
+    left: 3rem;
+    transform: translateY(-50%);
+}
+
+.banner-container .banner .content span{
+    font-size: 1.7rem;
+    color: #777;
+}
+
+.banner-container .banner .content h3{
+    color: #248277;
+    font-size: 2.2rem;
+    padding-top: .5rem;
+}
+
+/* end */
+
+/* about */
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.about .row .image{
+    flex: 1 1 40rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 50rem;
+}
+
+.about .row .content h3{
+    font-size: 3.5rem;
+    color: #248277;
+    text-transform: uppercase;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    margin: .5rem 0;
+    color: #777;
+    line-height: 2;
+}
+
+/* end */
+
+/* services */
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.services .box-container .box{
+    position: relative;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: .5rem;
+    padding-block-start: 4rem;
+    margin-block-start: 4.4rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.services .box-container .box:hover{
+    background: #248277;
+}
+
+.services .box-container .box .card-number{
+    position: absolute;
+    top: 0; left: 2.5rem;
+    transform: translateY(-50%);
+    background: #ededed;
+    color: #666;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-block: .5rem;
+    min-width: 5rem;
+    text-align: center;
+    border-radius: .5rem;
+    transition: .25s ease;
+}
+
+.services .box-container .box:hover .card-number{
+    color: #248277;
+}
+
+.services .box-container .box h3{
+    font-size: 2rem;
+    line-height: 1.3;
+    color: #248277;
+}
+
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color: #777;
+    margin: .5rem 0;
+}
+
+.services .box-container .box :is(h3, p){
+    transition: .25s ease;
+}
+
+.services .box-container .box:hover :is(h3, p){
+    color: #fff;
+}
+
+/* end */
